@@ -14,10 +14,9 @@
     </Style>
 
     <Placemark>
-      <name>S over Pinery Provincial Park</name>
+      <name>S over Pinery</name>
       <styleUrl>#s-style</styleUrl>
       <Polygon>
-        <tessellate>1</tessellate>
         <outerBoundaryIs>
           <LinearRing>
             <coordinates>
