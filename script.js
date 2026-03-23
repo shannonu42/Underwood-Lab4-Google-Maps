@@ -3,10 +3,13 @@ let bikeLayer;
 let transitLayer;
 let trafficLayer;
 
+const sCenter = { lat: 43.2826, lng: -81.7916 };
+
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.2826, lng: -81.7916 },
-        zoom: 14
+        center: sCenter,
+        zoom: 15,
+        mapTypeId: "roadmap"
     });
 
     const kmlLayer = new google.maps.KmlLayer({
@@ -19,12 +22,36 @@ function initMap() {
     transitLayer = new google.maps.TransitLayer();
     trafficLayer = new google.maps.TrafficLayer();
 }
+
+function clearLayers() {
+    bikeLayer.setMap(null);
+    transitLayer.setMap(null);
+    trafficLayer.setMap(null);
+}
+
 function toggleBicycle() {
-    bikeLayer.setMap(bikeLayer.getMap() ? null : map);
+    const isOn = bikeLayer.getMap();
+    clearLayers();
+
+    if (!isOn) {
+        bikeLayer.setMap(map);
+    }
 }
+
 function toggleTransit() {
-    transitLayer.setMap(transitLayer.getMap() ? null : map);
+    const isOn = transitLayer.getMap();
+    clearLayers();
+
+    if (!isOn) {
+        transitLayer.setMap(map);
+    }
 }
+
 function toggleTraffic() {
-    trafficLayer.setMap(trafficLayer.getMap() ? null : map);
+    const isOn = trafficLayer.getMap();
+    clearLayers();
+
+    if (!isOn) {
+        trafficLayer.setMap(map);
+    }
 }
