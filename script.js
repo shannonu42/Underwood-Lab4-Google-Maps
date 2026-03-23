@@ -13,7 +13,7 @@ function initMap() {
     });
 
     const kmlLayer = new google.maps.KmlLayer({
-        url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml",
+        url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=3",
         map: map,
         preserveViewport: true
     });
