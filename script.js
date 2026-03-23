@@ -5,7 +5,7 @@ let trafficLayer;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.24841, lng: -81.82342 },
+        center: { lat: 43.2826, lng: -81.7916 },
         zoom: 14
     });
 
