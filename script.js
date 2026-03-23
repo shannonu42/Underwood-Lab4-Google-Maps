@@ -3,7 +3,7 @@ let bikeLayer;
 let transitLayer;
 let trafficLayer;
 
-const sCenter = { lat: 43.2826, lng: -81.7916 };
+const sCenter = { lat: 43.2837, lng: -81.7949 };
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -12,11 +12,11 @@ function initMap() {
         mapTypeId: "roadmap"
     });
 
-    const kmlLayer = new google.maps.KmlLayer({
-        url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=3",
-        map: map,
-        preserveViewport: true
-    });
+const kmlLayer = new google.maps.KmlLayer({
+    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=4",
+    map: map,
+    preserveViewport: true
+});
 
     bikeLayer = new google.maps.BicyclingLayer();
     transitLayer = new google.maps.TransitLayer();
