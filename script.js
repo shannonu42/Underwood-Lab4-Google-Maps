@@ -19,7 +19,7 @@ let bikeLayer;
 let transitLayer;
 let trafficLayer;
 
-// Center point used to focus the map on the S polygon
+// Center point used to focus the map on the S polygon at Pinery Park
 const sCenter = { lat: 43.2837, lng: -81.7949 };
 
 function initMap() {
