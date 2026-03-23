@@ -2,6 +2,11 @@ let map;
 let bikeLayer;
 let transitLayer;
 let trafficLayer;
+new google.maps.Marker({
+    position: { lat: 43.24841, lng: -81.82342 },
+    map: map,
+    title: "Pinery Provincial Park"
+});
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -31,3 +36,4 @@ function toggleTransit() {
 function toggleTraffic() {
     trafficLayer.setMap(trafficLayer.getMap() ? null : map);
 }
+
