@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    ******************************************************
+    * File: index.html
+    * Author: Shannon Underwood
+    * Date: March 22 2026
+    *
+    * Description:
+    * Main webpage for Lab 4. This page displays a Google
+    * Map with a custom KML polygon shaped like the first
+    * letter of my name. Buttons are included to toggle
+    * bicycle, transit, and traffic layers.
+    *
+    * Notes:
+    * Uses external CSS and JavaScript files.
+    ******************************************************
+    -->
     <meta charset="UTF-8">
-    <title>Google Maps Lab 4</title>
+    <title>S in the Sand: Pinery Map Explorer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>My Name Map (S Shape)</h1>
+    <h1>S in the Sand</h1>
+    <h2>Pinery Provincial Park Map Explorer</h2>
 
-<div id="map"></div>
+    <div id="map"></div>
 
-<div class="controls">
-    <button onclick="toggleBicycle()">Bicycle</button>
-    <button onclick="toggleTransit()">Transit</button>
-    <button onclick="toggleTraffic()">Traffic</button>
-</div>
+    <div class="controls">
+        <button onclick="toggleBicycle()">Bicycle</button>
+        <button onclick="toggleTransit()">Transit</button>
+        <button onclick="toggleTraffic()">Traffic</button>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOPafLgm76zAfEnQKJRd0Mnx51FycSJz0&callback=initMap">
-</script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
 
 </body>
 </html>
