@@ -1,48 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-  <Document>
-    <name>letter_s.kml</name>
-
-    <Style id="s-polygon">
-      <LineStyle>
-        <color>ff0000ff</color>
-        <width>4</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>7f00ff00</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-
-    <Placemark>
-      <name>S Polygon</name>
-      <styleUrl>#s-polygon</styleUrl>
-      <Polygon>
-        <tessellate>1</tessellate>
-        <outerBoundaryIs>
-          <LinearRing>
-            <coordinates>
-              -81.7980,43.2875,0
-              -81.7860,43.2875,0
-              -81.7860,43.2845,0
-              -81.7945,43.2845,0
-              -81.7945,43.2825,0
-              -81.7875,43.2825,0
-              -81.7875,43.2795,0
-              -81.7985,43.2795,0
-              -81.7985,43.2765,0
-              -81.7855,43.2765,0
-              -81.7855,43.2815,0
-              -81.7925,43.2815,0
-              -81.7925,43.2835,0
-              -81.7845,43.2835,0
-              -81.7845,43.2875,0
-              -81.7980,43.2875,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-  </Document>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>letter_S_polygon.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Untitled Polygon</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-81.79124741049861,43.28706851023611,0 -81.79063892209258,43.28779249465795,0 -81.79301362427616,43.28878259777336,0 -81.79493916494619,43.28929468977282,0 -81.79674599129883,43.28902205166978,0 -81.79815965029206,43.2881400161704,0 -81.79877913652142,43.28713073489051,0 -81.79834716710974,43.28598678955843,0 -81.79720453340305,43.28475305137194,0 -81.79514451010621,43.2835924448537,0 -81.79406771032968,43.28303859650463,0 -81.79322842473036,43.28257984999353,0 -81.79218755533832,43.2819797488736,0 -81.79151227314026,43.28119373794459,0 -81.79133841507145,43.28012823719947,0 -81.79206868047781,43.27924827584671,0 -81.79360979840348,43.2791057209813,0 -81.79522969782734,43.27935058992591,0 -81.79696879096711,43.27983190777424,0 -81.79819400699476,43.2802751343355,0 -81.79885755901456,43.28149239551456,0 -81.8003500720408,43.28153183108017,0 -81.79982242323096,43.28008268047826,0 -81.79846647964914,43.27927900628153,0 -81.79704285272548,43.27877940535867,0 -81.79534339247014,43.27836841222092,0 -81.79297959484363,43.27805691654793,0 -81.79133238355007,43.27849508447861,0 -81.78994103506503,43.27962646804253,0 -81.78980941122023,43.2808665779699,0 -81.79019948623011,43.28173812783027,0 -81.79109969688857,43.28264744897879,0 -81.79252153668563,43.2833736630315,0 -81.79430829457715,43.28421246312116,0 -81.79572005169473,43.28519417057752,0 -81.79663357767009,43.28572910913635,0 -81.79706414106508,43.28648870119187,0 -81.79699093491308,43.28718353078289,0 -81.79654573182884,43.28779883489367,0 -81.79551659996828,43.28830647840898,0 -81.79456730990547,43.28827799355692,0 -81.79324765155049,43.28797529574635,0 -81.79228795014602,43.28762355666737,0 -81.79124741049861,43.28706851023611,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1094"></atom:link>
+	</Placemark>
+</Document>
 </kml>
