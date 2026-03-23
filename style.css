@@ -1,11 +1,17 @@
 body {
-        font-family: Arial;
-            text-align: center;
-            }
+    font-family: Arial;
+    text-align: center;
+    background: lightyellow;
+}
 
-            #map {
-                height: 500px;
-                    width: 80%;
-                        margin: auto;
-                        }
-                    
+p {
+    color: red;
+    font-size: 30px;
+}
+
+#map {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    border: 3px solid black;
+}
