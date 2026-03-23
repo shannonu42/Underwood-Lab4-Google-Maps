@@ -8,7 +8,7 @@ const sCenter = { lat: 43.2837, lng: -81.7949 };
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: sCenter,
-        zoom: 15,
+        zoom: 13,
         mapTypeId: "roadmap"
     });
 

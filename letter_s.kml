@@ -3,17 +3,17 @@
   <Document>
     <name>letter_S_polygon.kml</name>
 
-    <Style id="s-polygon">
-      <LineStyle>
-        <color>ff0000ff</color>
-        <width>4</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>7f00ff00</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
+  <Style id="s-polygon">
+  <LineStyle>
+    <color>ff000000</color> <!-- black -->
+    <width>5</width>
+  </LineStyle>
+  <PolyStyle>
+    <color>7fff0000</color> <!-- blue (semi-transparent) -->
+    <fill>1</fill>
+    <outline>1</outline>
+  </PolyStyle>
+</Style>
 
     <Placemark>
       <name>Untitled Polygon</name>
