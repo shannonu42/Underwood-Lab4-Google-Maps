@@ -3,17 +3,16 @@ let bikeLayer;
 let transitLayer;
 let trafficLayer;
 
-
-    function initMap() {
+function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.313, lng: -81.756 },
-        zoom: 10
+        center: { lat: 43.24841, lng: -81.82342 },
+        zoom: 14
     });
-
 
     const kmlLayer = new google.maps.KmlLayer({
         url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml",
-        map: map
+        map: map,
+        preserveViewport: false
     });
 
     bikeLayer = new google.maps.BicyclingLayer();
