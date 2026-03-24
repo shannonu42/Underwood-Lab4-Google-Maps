@@ -31,11 +31,11 @@ function initMap() {
     });
 
     // Load the hosted KML file containing the S polygon
-    const kmlLayer = new google.maps.KmlLayer({
-        url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=10",
-        map: map,
-        preserveViewport: true
-    });
+const kmlLayer = new google.maps.KmlLayer({
+    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=13",
+    map: map,
+    preserveViewport: true
+});
 
     // Create transportation overlay layers
     bikeLayer = new google.maps.BicyclingLayer();
