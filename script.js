@@ -1,3 +1,16 @@
+/******************************************************
+ * File: script.js
+ * Author: Shannon Underwood
+ * Date: March 23 2026
+ *
+ * Description:
+ * Initializes the Google Map, loads the KML polygon,
+ * and allows bicycle, transit, and traffic layers
+ * to be toggled on and off.
+ ******************************************************/
+
+console.log("script.js loaded");
+
 let map;
 let bikeLayer;
 let transitLayer;
@@ -25,7 +38,7 @@ function initMap() {
 
     console.log("KML layer created");
 
-    kmlLayer.addListener("status_changed", () => {
+    kmlLayer.addListener("status_changed", function () {
         console.log("KML status:", kmlLayer.getStatus());
     });
 
@@ -38,26 +51,39 @@ function initMap() {
 
 window.initMap = initMap;
 
+// Clears all transportation layers
 function clearLayers() {
     bikeLayer.setMap(null);
     transitLayer.setMap(null);
     trafficLayer.setMap(null);
 }
 
+// Toggles bicycle layer
 function toggleBicycle() {
     const isOn = bikeLayer.getMap();
     clearLayers();
-    if (!isOn) bikeLayer.setMap(map);
+
+    if (!isOn) {
+        bikeLayer.setMap(map);
+    }
 }
 
+// Toggles transit layer
 function toggleTransit() {
     const isOn = transitLayer.getMap();
     clearLayers();
-    if (!isOn) transitLayer.setMap(map);
+
+    if (!isOn) {
+        transitLayer.setMap(map);
+    }
 }
 
+// Toggles traffic layer
 function toggleTraffic() {
     const isOn = trafficLayer.getMap();
     clearLayers();
-    if (!isOn) trafficLayer.setMap(map);
+
+    if (!isOn) {
+        trafficLayer.setMap(map);
+    }
 }
