@@ -32,7 +32,7 @@ function initMap() {
 
     // Load the hosted KML file containing the S polygon
 const kmlLayer = new google.maps.KmlLayer({
-    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_S.kml",
+    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/s_letter.kml",
     map: map,
     preserveViewport: true,
     zoom: 11
