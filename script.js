@@ -32,9 +32,9 @@ function initMap() {
 
     // Load the hosted KML file containing the S polygon
 const kmlLayer = new google.maps.KmlLayer({
-    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=13",
+    url: "https://raw.githubusercontent.com/shannonu42/Underwood-Lab4-Google-Maps/main/letter_s.kml?v=14",
     map: map,
-    preserveViewport: true
+    preserveViewport: false
 });
 
     // Create transportation overlay layers
